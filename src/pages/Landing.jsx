@@ -1,14 +1,14 @@
-import { GoInfo } from "react-icons/go";
-import { MdDarkMode, MdWbSunny } from "react-icons/md";
 import { Button } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
+import { MdDarkMode, MdWbSunny } from "react-icons/md";
 
 const Landing = ({ eTh }) => {
+  // wrapper
   return (
     <div className="flex flex-col justify-evenly items-center min-h-screen h-full py-1 px-3 dark:text-white dark:bg-[#191919]">
       {/* title */}
       <div className="relative flex flex-col items-center w-full py-5 px-3">
-        <div className="absolute top-0 flex justify-between items-center w-11/12 h-full ">
+        <div className="absolute top-0 flex justify-end items-center w-11/12 h-full ">
           {/* DarkMode */}
           {localStorage.th == "light" ? (
             <div
@@ -16,7 +16,7 @@ const Landing = ({ eTh }) => {
                 localStorage.th = "dark";
                 eTh("dark");
               }}
-              className="group w-full"
+              className=""
             >
               <MdDarkMode className="text-black size-12 hover:text-blue-700" />
             </div>
@@ -26,12 +26,11 @@ const Landing = ({ eTh }) => {
                 localStorage.th = "light";
                 eTh("light");
               }}
-              className="group w-full"
+              className=""
             >
               <MdWbSunny className="text-white size-12 hover:text-yellow-500 border-none" />
             </div>
           )}
-          <GoInfo style={{ strokeWidth: "1px" }} className="size-12 " />
         </div>
         <h1 className="w-full h-full text-7xl text-center font-bold leading-tight tracking-[-0.015em]">
           {" "}
@@ -41,7 +40,7 @@ const Landing = ({ eTh }) => {
       {/* card */}
       <div className="flex flex-col justify-evenly items-center flex-grow px-3 ">
         <div className=" text-center ">
-          <h2 class="tracking-light text-8xl font-bold leading-tight ">
+          <h2 className="tracking-light text-8xl font-bold leading-tight ">
             Welcome to Secret Questions!
           </h2>
         </div>

@@ -1,8 +1,9 @@
-import { IoSettingsOutline, IoChevronBackOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { Button } from "@material-tailwind/react";
+import { MdDarkMode, MdWbSunny } from "react-icons/md";
+import { IoChevronBackOutline } from "react-icons/io5";
 
-const Description = () => {
+const Description = ({ eTh }) => {
   // wrapper
   return (
     <div className="min-h-screen h-full text-5xl dark:text-white dark:bg-[#191919]">
@@ -18,7 +19,27 @@ const Description = () => {
               <Link to="/" className="focus:text-[#248cf3]">
                 <IoChevronBackOutline className="-ml-3" />
               </Link>
-              <IoSettingsOutline />
+              {localStorage.th == "light" ? (
+                <div
+                  onClick={() => {
+                    localStorage.th = "dark";
+                    eTh("dark");
+                  }}
+                  className=""
+                >
+                  <MdDarkMode className="text-black size-12 hover:text-blue-700" />
+                </div>
+              ) : (
+                <div
+                  onClick={() => {
+                    localStorage.th = "light";
+                    eTh("light");
+                  }}
+                  className=""
+                >
+                  <MdWbSunny className="text-white size-12 hover:text-yellow-500 border-none" />
+                </div>
+              )}{" "}
             </div>
           </div>
         </div>
@@ -65,7 +86,7 @@ const Description = () => {
           {/* button */}
           <div className="w-full">
             <div className="w-full">
-              <Link to="description">
+              <Link to="/game">
                 <Button className="w-full py-8 mb-16 text-4xl rounded-full bg-[#248cf3] dark:bg-[#38e07b] dark:text-white">
                   Start Game
                 </Button>
