@@ -23,7 +23,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing eTh={eTh} />}></Route>
         <Route path="/description" element={<Description eTh={eTh} />}></Route>
-        <Route path="/game" element={<Game />}></Route>
+        <Route path="/game" element={<Game eTh={eTh} />}></Route>
       </Routes>
     </div>
   );

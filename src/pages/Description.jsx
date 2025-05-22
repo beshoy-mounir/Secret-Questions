@@ -4,18 +4,20 @@ import { MdDarkMode, MdWbSunny } from "react-icons/md";
 import { IoChevronBackOutline } from "react-icons/io5";
 
 const Description = ({ eTh }) => {
-  // wrapper
   return (
+    // wrapper
     <div className="min-h-screen h-full text-5xl dark:text-white dark:bg-[#191919]">
       {/* container */}
-      <div className="flex flex-col px-5 h-full">
+      <div className="flex flex-col px-5 h-svh ">
         {/* heading  */}
-        <div className="realtive flex justify-center items-center py-5 my-5 ">
+        <div className="relative flex justify-center items-center py-5 my-5 ">
           <div className="w-full flex justify-center items-center ">
-            <h2 className="text-7xl font-bold">How to play</h2>
+            <h2 className="w-full h-full text-7xl text-center font-bold leading-tight tracking-[-0.015em]">
+              How to play
+            </h2>
           </div>
-          <div className="absolute w-full flex justify-center items-center ">
-            <div className="flex justify-between items-center w-11/12">
+          <div className="absolute top-0 flex justify-end items-center w-11/12 h-full ">
+            <div className="flex justify-between items-center w-full">
               <Link to="/" className="focus:text-[#248cf3]">
                 <IoChevronBackOutline className="-ml-3" />
               </Link>
