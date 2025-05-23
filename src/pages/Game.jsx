@@ -126,19 +126,19 @@ const Game = ({ eTh }) => {
               <span className="text-center text-7xl">{currentQuestion}</span>
               <Button
                 onClick={() => eStep(1)}
-                className="w-2/3 py-8 mb-16 text-4xl rounded-full bg-[#248cf3] dark:bg-[#38e07b] dark:text-white"
+                className="w-2/3 py-8 mb-16 text-4xl rounded-full bg-[#248cf3] dark:bg-[#38e07b] dark:text-black"
               >
                 Hide Question
               </Button>
             </div>
           ) : step == 1 ? (
             <div className="flex flex-col justify-evenly items-center w-4/5 h-1/2 ">
-              <span className="text-center text-7xl text-yellow-500">
-                Flip A Coin
+              <span className="text-center text-7xl dark:text-yellow-500">
+                Flip a Coin
               </span>
               <Button
                 onClick={() => eStep(2)}
-                className="w-2/3 py-8 mb-16 text-4xl rounded-full bg-[#248cf3] dark:bg-[#38e07b] dark:text-white"
+                className="w-2/3 py-8 mb-16 text-4xl rounded-full bg-[#248cf3] dark:bg-[#38e07b] dark:text-black"
               >
                 Flip
               </Button>
@@ -153,7 +153,7 @@ const Game = ({ eTh }) => {
                   generateRandomQuestion(); // Call the updated function to get a new non-repeating question
                   eStep(0); // Reset step to show the question
                 }}
-                className="w-2/3 py-8 mb-16 text-4xl rounded-full bg-[#248cf3] dark:bg-[#38e07b] dark:text-white"
+                className="w-2/3 py-8 mb-16 text-4xl rounded-full bg-[#248cf3] dark:bg-[#38e07b] dark:text-black"
               >
                 Show Question
               </Button>
