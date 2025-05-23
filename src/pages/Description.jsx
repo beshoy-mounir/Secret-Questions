@@ -89,7 +89,7 @@ const Description = ({ eTh }) => {
           <div className="w-full">
             <div className="w-full">
               <Link to="/game">
-                <Button className="w-full py-8 mb-16 text-4xl rounded-full bg-[#248cf3] dark:bg-[#38e07b] dark:text-white">
+                <Button className="w-full py-8 mb-16 text-4xl rounded-full bg-[#248cf3] dark:bg-[#38e07b] dark:text-black">
                   Start Game
                 </Button>
               </Link>

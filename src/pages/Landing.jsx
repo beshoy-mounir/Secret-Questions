@@ -61,7 +61,7 @@ const Landing = ({ eTh }) => {
           {/* button */}
           <div className="w-full">
             <Link to="description">
-              <Button className="w-full py-8 text-4xl rounded-full bg-[#248cf3] dark:bg-[#38e07b] dark:text-white">
+              <Button className="w-full py-8 text-4xl rounded-full bg-[#248cf3] dark:bg-[#38e07b] dark:text-black">
                 Next
               </Button>
             </Link>
