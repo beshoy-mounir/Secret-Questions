@@ -5,7 +5,7 @@ import friendshipQuestions from "../data/questions"; // Importing the questions 
 import { IoHome } from "react-icons/io5";
 import { MdDarkMode, MdWbSunny } from "react-icons/md";
 
-const Game = () => {
+const Game = ({ eth }) => {
   // Removed `({ questions })` as we're importing directly
   const [step, eStep] = useState(0);
   // Renamed randomQ to currentQuestion for clarity on its purpose
