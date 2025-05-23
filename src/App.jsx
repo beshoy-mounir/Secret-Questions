@@ -19,7 +19,7 @@ function App() {
     }
   }, [th]);
   return (
-    <div>
+    <div className="select-none">
       <Routes>
         <Route path="/" element={<Landing eTh={eTh} />}></Route>
         <Route path="/description" element={<Description eTh={eTh} />}></Route>

@@ -5,7 +5,7 @@ import { MdDarkMode, MdWbSunny } from "react-icons/md";
 const Landing = ({ eTh }) => {
   return (
     // wrapper
-    <div className="min-h-screen h-full text-5xl dark:text-white dark:bg-[#191919]">
+    <div className="min-h-screen h-full text-5xl dark:text-white dark:bg-[#191919] overflow-scroll">
       {/* container */}
       <div className="flex flex-col px-5 h-svh ">
         {/* Heading */}

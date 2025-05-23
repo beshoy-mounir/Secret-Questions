@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@material-tailwind/react";
 import friendshipQuestions from "../data/questions"; // Importing the questions directly
-import { IoHomeSharp } from "react-icons/io5";
-import { IoChevronBackOutline } from "react-icons/io5";
+import { IoHome } from "react-icons/io5";
 import { MdDarkMode, MdWbSunny } from "react-icons/md";
 
 const Game = () => {
@@ -76,7 +75,7 @@ const Game = () => {
   console.log(askedQuestionIndices);
   return (
     // wrapper
-    <div className="min-h-screen h-full text-5xl dark:text-white dark:bg-[#191919]">
+    <div className="min-h-screen h-full text-5xl dark:text-white dark:bg-[#191919] overflow-scroll">
       {/* Container */}
       <div className="flex flex-col px-5 h-svh ">
         {/* Question Number */}
@@ -93,7 +92,7 @@ const Game = () => {
           <div className="absolute top-0 flex justify-end items-center w-11/12 h-full ">
             <div className="flex justify-between items-center w-full">
               <Link to="/" className="focus:text-[#248cf3]">
-                <IoChevronBackOutline className="-ml-3" />
+                <IoHome className="-ml-3" />
               </Link>
               {localStorage.th == "light" ? (
                 <div
