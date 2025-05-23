@@ -19,7 +19,7 @@ function App() {
     }
   }, [th]);
   return (
-    <div className="select-none">
+    <div className="select-none touch-pinch-zoom">
       <Routes>
         <Route path="/" element={<Landing eTh={eTh} />}></Route>
         <Route path="/description" element={<Description eTh={eTh} />}></Route>
